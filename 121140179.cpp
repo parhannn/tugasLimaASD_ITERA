@@ -192,6 +192,7 @@ class circularLinkedList_Func
             }
         }
 
+        //menambahkan list sekaligus melakukan sorting pada data
         void addNum(tList* daftar, infotype isiData) 
         {
             if (IsEmpty(*daftar) || isiData <= (*daftar).head->info)
@@ -212,6 +213,7 @@ class circularLinkedList_Func
             }
         }
 
+        //menghapus list sesuai dengan input data user
         void deleteNum(tList* daftar, infotype isiData) 
         {
             if (!IsEmpty(*daftar)) 
@@ -247,6 +249,7 @@ class circularLinkedList_Func
             }
         }
 
+        //mencetak hasil list yang ada
         void printList(tList daftar) 
         {
             temp = daftar.head;

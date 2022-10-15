@@ -251,7 +251,8 @@ class circularLinkedList
         {
             temp = daftar.head;
 
-            while (temp->next != daftar.head) {
+            while (temp->next != daftar.head) 
+            {
                 cout << "Data Node Ini: " << temp->info << endl;
                 cout << "Data Node Selanjutnya: " << temp->next->info << endl;
 

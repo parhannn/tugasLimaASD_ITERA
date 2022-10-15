@@ -11,15 +11,15 @@ using namespace std;
 */
 
 typedef int infotype;
-typedef struct circularLinked_List* address;
+typedef struct circularLinkedList* address;
 
-typedef struct circularLinked_List
+typedef struct circularLinkedList
 {
     infotype info;
     address next;
 }; 
 
-circularLinked_List nodeList;
+circularLinkedList nodeList;
 
 typedef struct tList 
 {
@@ -30,7 +30,7 @@ typedef struct tList
 tList List;
 
 //kelas circular linked list yang berisikan fungsi-fungsi dan variabel private
-class circularLinkedList
+class circularLinkedList_Func
 {
     //berisikan variabel yang hanya dapat diakses di dalam class circularLinkedList
     private:
@@ -55,7 +55,7 @@ class circularLinkedList
         //eksekusi untuk meletakkan list baru
         address Allocation(infotype isiData) 
         {
-            newNode = new circularLinked_List;
+            newNode = new circularLinkedList;
             newNode->info = isiData;
             newNode->next = NULL;
 
@@ -268,7 +268,7 @@ class circularLinkedList
 int main() 
 {
     //objek dari circular linked list yakni "bilangan"
-    circularLinkedList bilangan;
+    circularLinkedList_Func bilangan;
     //komponen linked list
     tList bilanganBulat;
     int hapus;

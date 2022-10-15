@@ -7,6 +7,7 @@ using namespace std;
     NIM     : 121140179
     Kelas   : RC
     ASD - TUGAS 5
+    Link github: https://github.com/parhannn/tugasLimaASD_ITERA/blob/main/121140179.cpp
 */
 
 typedef int infotype;
@@ -74,19 +75,19 @@ class circularLinkedList
 
             if (!IsEmpty(*daftar)) 
             {
-                newNode->next = (*daftar).head; // 1
+                newNode->next = (*daftar).head; 
                 temp = (*daftar).head;
 
-                while (temp->next != (*daftar).head) // 2
+                while (temp->next != (*daftar).head) 
                     temp = temp->next;
                 
-                temp->next = newNode;  // 3
-                (*daftar).head = newNode; // 4
+                temp->next = newNode; 
+                (*daftar).head = newNode; 
             }
             else 
             {
-                (*daftar).head = newNode;       // 1
-                newNode->next = (*daftar).head; // 2
+                (*daftar).head = newNode;      
+                newNode->next = (*daftar).head; 
             }
         }
 
@@ -108,11 +109,11 @@ class circularLinkedList
             {
                 temp = (*daftar).head;
 
-                while (temp->next != (*daftar).head) // 1
+                while (temp->next != (*daftar).head) 
                     temp = temp->next;
 
-                // tmp->next = NewElmt; // 2
-                // NewElmt->next = (*L).first; // 3
+                // temp->next = newNode; 
+                // newNode->next = (*daftar).head; 
                 addAfter(temp, isiData);
             }
             else
@@ -130,17 +131,17 @@ class circularLinkedList
 
                 if (temp1->next != (*daftar).head) 
                 {
-                    while (temp2->next != (*daftar).head) // 1
+                    while (temp2->next != (*daftar).head) 
                         temp2 = temp2->next;
 
-                    (*daftar).head = (*daftar).head->next; // 2
-                    temp2->next = (*daftar).head;       // 3
-                    temp1->next = NULL;             // 4
+                    (*daftar).head = (*daftar).head->next; 
+                    temp2->next = (*daftar).head;       
+                    temp1->next = NULL;             
                 }
                 else 
                 {
-                    temp1->next = NULL; // 1
-                    (*daftar).head = NULL; // 2
+                    temp1->next = NULL; 
+                    (*daftar).head = NULL; 
                 }
 
                 deAllocation(temp1);
@@ -173,15 +174,15 @@ class circularLinkedList
                 if (temp->next != (*daftar).head) 
                 {
                     while (temp->next != (*daftar).head) 
-                    { // 1
+                    {
                         predTemp = temp;
                         temp = temp->next;
                     }
 
-                    // predTmp->next = (*L).first; // 2
-                    // tmp->next = NULL; // 3
+                    // predTemp->next = (*daftar).head; 
+                    // temp->next = NULL; 
 
-                    // Deallocation(tmp);
+                    // deAllocation(temp);
                     deleteAfter(predTemp, hapus);
                 }
                 else
@@ -287,7 +288,7 @@ int main()
 
     deleteFirst(&data, &hapus);
     cout << "Data yang Dihapus = " << hapus << endl;
-    deleteLast(&data, &x);
+    deleteLast(&data, &hapus);
     cout << "Data yang dihapus = " << hapus << endl;
     */
 

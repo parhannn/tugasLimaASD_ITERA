@@ -11,15 +11,15 @@ using namespace std;
 */
 
 typedef int infotype;
-typedef struct tElmtlist* address;
+typedef struct circularLinked_List* address;
 
-typedef struct tElmtlist 
+typedef struct circularLinked_List
 {
     infotype info;
     address next;
 }; 
 
-tElmtlist nodeList;
+circularLinked_List nodeList;
 
 typedef struct tList 
 {
@@ -55,7 +55,7 @@ class circularLinkedList
         //eksekusi untuk meletakkan list baru
         address Allocation(infotype isiData) 
         {
-            newNode = new tElmtlist;
+            newNode = new circularLinked_List;
             newNode->info = isiData;
             newNode->next = NULL;
 

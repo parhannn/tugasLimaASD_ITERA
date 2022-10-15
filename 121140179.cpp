@@ -33,8 +33,8 @@ class circularLinkedList
 {
     //berisikan variabel yang hanya dapat diakses di dalam class circularLinkedList
     private:
-    address newNode, temp, temp1, temp2, predNode, predTemp;
-    bool found;
+        address newNode, temp, temp1, temp2, predNode, predTemp;
+        bool found;
 
     //berisikan fungsi-fungsi yang dapat diakses di program main
     public:

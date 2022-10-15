@@ -32,7 +32,7 @@ tList List;
 //kelas circular linked list yang berisikan fungsi-fungsi dan variabel private
 class circularLinkedList_Func
 {
-    //berisikan variabel yang hanya dapat diakses di dalam class circularLinkedList
+    //berisikan variabel yang hanya dapat diakses di dalam class circularLinkedList_Func
     private:
         address newNode, temp, temp1, temp2, predNode, predTemp;
         bool found;

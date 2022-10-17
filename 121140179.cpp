@@ -15,6 +15,7 @@ typedef struct circularLinkedList* address;
 
 typedef struct circularLinkedList
 {
+    //komponen
     infotype info;
     address next;
 }; 

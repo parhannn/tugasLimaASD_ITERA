@@ -250,11 +250,11 @@ class circularLinkedList_Func
         }
 
         //mencetak hasil list yang ada
-        void printList(tList daftar) 
+        void printList(tList* daftar) 
         {
-            temp = daftar.head;
+            temp = (*daftar).head;
 
-            while (temp->next != daftar.head) 
+            while (temp->next != (*daftar).head) 
             {
                 cout << "Data Node Ini: " << temp->info << endl;
                 cout << "Data Node Selanjutnya: " << temp->next->info << endl;
@@ -310,19 +310,19 @@ int main()
     bilangan.deleteNum(&bilanganBulat, 9);
     bilangan.deleteNum(&bilanganBulat, 1);
 
-    bilangan.addNum(&bilanganBulat, 8);
-    bilangan.addNum(&bilanganBulat, 3);
-    bilangan.addNum(&bilanganBulat, 6);
-    bilangan.addNum(&bilanganBulat, 2);
-    bilangan.addNum(&bilanganBulat, 1);
-    bilangan.addNum(&bilanganBulat, 7);
-    bilangan.addNum(&bilanganBulat, 5);
-    bilangan.addNum(&bilanganBulat, 4);
-    bilangan.addNum(&bilanganBulat, 9);
+    //bilangan.addNum(&bilanganBulat, 8);
+    //bilangan.addNum(&bilanganBulat, 3);
+    //bilangan.addNum(&bilanganBulat, 6);
+    //bilangan.addNum(&bilanganBulat, 2);
+    //bilangan.addNum(&bilanganBulat, 1);
+    //bilangan.addNum(&bilanganBulat, 7);
+    //bilangan.addNum(&bilanganBulat, 5);
+    //bilangan.addNum(&bilanganBulat, 4);
+    //bilangan.addNum(&bilanganBulat, 9);
 
     bilangan.deleteNum(&bilanganBulat, 10);
 
-    bilangan.printList(bilanganBulat);
+    bilangan.printList(&bilanganBulat);
 
     return 0;
 }   

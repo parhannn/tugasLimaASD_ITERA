@@ -3,7 +3,6 @@
 using namespace std;
 
 /*
-ubahhh
     Nama    : Farhan Apri Kesuma
     NIM     : 121140179
     Kelas   : RC
